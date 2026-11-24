@@ -51,7 +51,7 @@
     <select id="pular" aria-label="Ir para o vídeo"></select>
     <div class="grupo" id="grupo"></div>
     <div class="card"><video id="video" controls playsinline preload="metadata"></video></div>
-    <div class="codigo">Corte <b id="codigo"></b> · <span id="titulo"></span></div>
+    <div class="codigo">Corte <b id="codigo"></b> · <span id="titulo"></span><br>Texto na tela: <span id="tela"></span></div>
     <div class="botoes">
       <button class="sim" id="bSim">✓ Aprovo</button>
       <button class="nao" id="bNao">✕ Não aprovo</button>
@@ -73,7 +73,7 @@
   </section>
 </main>
 
-<script src="cortes.js?v=1"></script>
+<script src="cortes.js?v=2"></script>
 <script>
   const CHAVE = "ricardo-cortes-24-11";
   let votos = {}, obs = {}, i = 0;
@@ -93,7 +93,7 @@
   function rotulos() {
     [...$("pular").options].forEach(o => {
       const c = CORTES[o.value], v = votos[c.id];
-      o.textContent = (v === "sim" ? "✓ " : v === "nao" ? "✕ " : "· ") + c.id + " " + c.titulo + " (" + mmss(c.dur) + ")";
+      o.textContent = (v === "sim" ? "✓ " : v === "nao" ? "✕ " : "· ") + c.id + " " + c.tela.replace(" / ", " ") + " (" + mmss(c.dur) + ")";
     });
   }
 
@@ -102,7 +102,8 @@
     v.pause(); v.poster = c.poster; v.src = c.video;
     $("grupo").textContent = c.grupo;
     $("codigo").textContent = c.id;
-    $("titulo").textContent = c.titulo + " · " + mmss(c.dur);
+    $("titulo").textContent = mmss(c.dur);
+    $("tela").textContent = c.tela;
     $("obs").value = obs[c.id] || "";
     $("bSim").classList.toggle("escolhido", votos[c.id] === "sim");
     $("bNao").classList.toggle("escolhido", votos[c.id] === "nao");
@@ -136,7 +137,7 @@
       t += "✕ Não aprovo (" + nao.length + "): " + (nao.join(", ") || "-") + "\n";
       if (falta.length) t += "Sem resposta: " + falta.join(", ") + "\n";
     });
-    const notas = CORTES.filter(c => obs[c.id]).map(c => c.id + " (" + c.titulo + "): " + obs[c.id]);
+    const notas = CORTES.filter(c => obs[c.id]).map(c => c.id + " (" + c.tela + "): " + obs[c.id]);
     if (notas.length) t += "\nAjustes:\n" + notas.join("\n") + "\n";
     return t;
   }
