@@ -5,7 +5,7 @@ const CORTES = [
   "titulo": "A oracao aos 20 anos",
   "tela": "SENHOR, ME FAÇA UM INSTRUMENTO / NO MEIO DO FUTEBOL",
   "dur": 101,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/J01.mp4",
+  "video": "videos/J01.mp4",
   "poster": "posters/J01.jpg"
  },
  {
@@ -14,7 +14,7 @@ const CORTES = [
   "titulo": "Como eu orava com a Biblia",
   "tela": "ME DÁ, SENHOR, / OS MISTÉRIOS DA TUA PALAVRA",
   "dur": 65,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/J02.mp4",
+  "video": "videos/J02.mp4",
   "poster": "posters/J02.jpg"
  },
  {
@@ -23,7 +23,7 @@ const CORTES = [
   "titulo": "O futebol era so um disfarce",
   "tela": "O FUTEBOL ERA / SÓ UM DISFARCE",
   "dur": 67,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/J03.mp4",
+  "video": "videos/J03.mp4",
   "poster": "posters/J03.jpg"
  },
  {
@@ -32,7 +32,7 @@ const CORTES = [
   "titulo": "Vaidade sabota o reino",
   "tela": "VAIDADE SABOTA / O REINO DE DEUS",
   "dur": 90,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/J04.mp4",
+  "video": "videos/J04.mp4",
   "poster": "posters/J04.jpg"
  },
  {
@@ -41,7 +41,7 @@ const CORTES = [
   "titulo": "Pode se destacar no Instagram",
   "tela": "PODE SE DESTACAR NO INSTAGRAM / DESDE QUE APONTE PRA DEUS",
   "dur": 111,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/J05.mp4",
+  "video": "videos/J05.mp4",
   "poster": "posters/J05.jpg"
  },
  {
@@ -50,7 +50,7 @@ const CORTES = [
   "titulo": "Herois de joelho",
   "tela": "NÃO HERÓIS DE CAPA / HERÓIS DE JOELHO",
   "dur": 85,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/J06.mp4",
+  "video": "videos/J06.mp4",
   "poster": "posters/J06.jpg"
  },
  {
@@ -59,7 +59,7 @@ const CORTES = [
   "titulo": "Perdi meu pai aos 8",
   "tela": "PERDI MEU PAI AOS 8 / E FUI PROCURAR UM HERÓI",
   "dur": 139,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/J07.mp4",
+  "video": "videos/J07.mp4",
   "poster": "posters/J07.jpg"
  },
  {
@@ -68,7 +68,7 @@ const CORTES = [
   "titulo": "Nao vai ser voce",
   "tela": "NUNCA O BAIRRO PRODUZIU NINGUÉM / NÃO VAI SER VOCÊ",
   "dur": 106,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/J08.mp4",
+  "video": "videos/J08.mp4",
   "poster": "posters/J08.jpg"
  },
  {
@@ -77,7 +77,7 @@ const CORTES = [
   "titulo": "Deus vai exigir de voce",
   "tela": "DEUS NUNCA LEVANTA NINGUÉM / SEM UMA RECOMPENSA PRA DAR",
   "dur": 130,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/J09.mp4",
+  "video": "videos/J09.mp4",
   "poster": "posters/J09.jpg"
  },
  {
@@ -86,7 +86,7 @@ const CORTES = [
   "titulo": "Nao terceirize sua casa",
   "tela": "NÃO TERCEIRIZE / A LIDERANÇA DA SUA CASA",
   "dur": 105,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/J10.mp4",
+  "video": "videos/J10.mp4",
   "poster": "posters/J10.jpg"
  },
  {
@@ -95,7 +95,7 @@ const CORTES = [
   "titulo": "Batalha de madrugada",
   "tela": "BATALHA DE MADRUGADA / NA PORTA DOS MEUS FILHOS",
   "dur": 64,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/J11.mp4",
+  "video": "videos/J11.mp4",
   "poster": "posters/J11.jpg"
  },
  {
@@ -104,7 +104,7 @@ const CORTES = [
   "titulo": "Guerreiro no espirito",
   "tela": "GUERREIRO NO ESPÍRITO / E NÃO NO EGO",
   "dur": 84,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/J12.mp4",
+  "video": "videos/J12.mp4",
   "poster": "posters/J12.jpg"
  },
  {
@@ -113,7 +113,7 @@ const CORTES = [
   "titulo": "So volto com boas noticias",
   "tela": "EU SÓ VOLTO PRA CASA / COM BOAS NOTÍCIAS",
   "dur": 62,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/J13.mp4",
+  "video": "videos/J13.mp4",
   "poster": "posters/J13.jpg"
  },
  {
@@ -122,7 +122,7 @@ const CORTES = [
   "titulo": "O heroi nao precisa ser o maior",
   "tela": "O HERÓI NÃO PRECISA SER O MAIOR / SÓ CONFIAR NO MAIOR",
   "dur": 109,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/J14.mp4",
+  "video": "videos/J14.mp4",
   "poster": "posters/J14.jpg"
  },
  {
@@ -131,7 +131,7 @@ const CORTES = [
   "titulo": "Onde o homem se levanta",
   "tela": "ONDE O HOMEM SE LEVANTA / A CASA É RESTAURADA",
   "dur": 84,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/J15.mp4",
+  "video": "videos/J15.mp4",
   "poster": "posters/J15.jpg"
  },
  {
@@ -140,7 +140,7 @@ const CORTES = [
   "titulo": "O verdadeiro avivamento",
   "tela": "AVIVAMENTO NÃO É AGITO / É ARREPENDIMENTO",
   "dur": 55,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/J16.mp4",
+  "video": "videos/J16.mp4",
   "poster": "posters/J16.jpg"
  },
  {
@@ -149,7 +149,7 @@ const CORTES = [
   "titulo": "Aproveitei a juventude",
   "tela": "APROVEITEI A JUVENTUDE / ATÉ ENTENDER ISSO",
   "dur": 116,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/N01.mp4",
+  "video": "videos/N01.mp4",
   "poster": "posters/N01.jpg"
  },
  {
@@ -158,7 +158,7 @@ const CORTES = [
   "titulo": "Heroi ou vilao em casa",
   "tela": "HERÓI OU VILÃO, / QUEM ME ESPERAVA EM CASA",
   "dur": 75,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/N02.mp4",
+  "video": "videos/N02.mp4",
   "poster": "posters/N02.jpg"
  },
  {
@@ -167,7 +167,7 @@ const CORTES = [
   "titulo": "O Milan parou por mim",
   "tela": "IRMÃ SEQUESTRADA / E O MILAN PAROU POR MIM",
   "dur": 85,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/N03.mp4",
+  "video": "videos/N03.mp4",
   "poster": "posters/N03.jpg"
  },
  {
@@ -176,7 +176,7 @@ const CORTES = [
   "titulo": "So o aqui e agora",
   "tela": "CAMPEÃO DA CHAMPIONS / SEM NUNCA TER PLANEJADO",
   "dur": 108,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/N04.mp4",
+  "video": "videos/N04.mp4",
   "poster": "posters/N04.jpg"
  },
  {
@@ -185,7 +185,7 @@ const CORTES = [
   "titulo": "Seu nivel e quarta divisao",
   "tela": "\"VOCÊ É DE 4ª DIVISÃO\" / 2 ANOS DEPOIS, SELEÇÃO",
   "dur": 95,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/N05.mp4",
+  "video": "videos/N05.mp4",
   "poster": "posters/N05.jpg"
  },
  {
@@ -194,7 +194,7 @@ const CORTES = [
   "titulo": "A faisca da minha mae",
   "tela": "A FAÍSCA QUE FALTAVA / VEIO DA MINHA MÃE",
   "dur": 63,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/N06.mp4",
+  "video": "videos/N06.mp4",
   "poster": "posters/N06.jpg"
  },
  {
@@ -203,7 +203,7 @@ const CORTES = [
   "titulo": "Pavilhao Nove do Carandiru",
   "tela": "AOS 11 ANOS ENTREI / NO PAVILHÃO 9 DO CARANDIRU",
   "dur": 92,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/N07.mp4",
+  "video": "videos/N07.mp4",
   "poster": "posters/N07.jpg"
  },
  {
@@ -212,7 +212,7 @@ const CORTES = [
   "titulo": "Voce nao escolhe mas decide",
   "tela": "VOCÊ NÃO ESCOLHE ONDE NASCE / MAS VOCÊ DECIDE",
   "dur": 90,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/N08.mp4",
+  "video": "videos/N08.mp4",
   "poster": "posters/N08.jpg"
  },
  {
@@ -221,7 +221,7 @@ const CORTES = [
   "titulo": "Voce esta certa",
   "tela": "ACHA QUE NÃO TEM TALENTO? / VOCÊ TEM RAZÃO",
   "dur": 105,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/N09.mp4",
+  "video": "videos/N09.mp4",
   "poster": "posters/N09.jpg"
  },
  {
@@ -230,7 +230,7 @@ const CORTES = [
   "titulo": "O futebol me deu voz",
   "tela": "EU TINHA MEDO / DE FALAR COM AS PESSOAS",
   "dur": 101,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/N10.mp4",
+  "video": "videos/N10.mp4",
   "poster": "posters/N10.jpg"
  },
  {
@@ -239,7 +239,7 @@ const CORTES = [
   "titulo": "Uma mala so de livros",
   "tela": "DUAS MALAS EM TODA VIAGEM / UMA SÓ DE LIVROS",
   "dur": 64,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/N11.mp4",
+  "video": "videos/N11.mp4",
   "poster": "posters/N11.jpg"
  },
  {
@@ -248,7 +248,7 @@ const CORTES = [
   "titulo": "Poder pessoal e posicional",
   "tela": "EXISTEM 2 TIPOS DE PODER / QUAL É O SEU?",
   "dur": 68,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/N12.mp4",
+  "video": "videos/N12.mp4",
   "poster": "posters/N12.jpg"
  },
  {
@@ -257,7 +257,7 @@ const CORTES = [
   "titulo": "O futebol te da",
   "tela": "O FUTEBOL TE DÁ / QUEM DESPERDIÇA É VOCÊ",
   "dur": 97,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/N13.mp4",
+  "video": "videos/N13.mp4",
   "poster": "posters/N13.jpg"
  },
  {
@@ -266,7 +266,7 @@ const CORTES = [
   "titulo": "O tecnico proibiu a oracao",
   "tela": "O TÉCNICO PROIBIU / A ORAÇÃO NO ELENCO",
   "dur": 95,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/N14.mp4",
+  "video": "videos/N14.mp4",
   "poster": "posters/N14.jpg"
  },
  {
@@ -275,7 +275,7 @@ const CORTES = [
   "titulo": "A maior batalha e na mente",
   "tela": "SUA MAIOR GUERRA / NÃO É LÁ FORA",
   "dur": 109,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/C01.mp4",
+  "video": "videos/C01.mp4",
   "poster": "posters/C01.jpg"
  },
  {
@@ -284,7 +284,7 @@ const CORTES = [
   "titulo": "O que meu pai diria",
   "tela": "O QUE MEU PAI DIRIA / SE ME VISSE HOJE?",
   "dur": 92,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/C02.mp4",
+  "video": "videos/C02.mp4",
   "poster": "posters/C02.jpg"
  },
  {
@@ -293,7 +293,7 @@ const CORTES = [
   "titulo": "Davi e a habilidade",
   "tela": "TODOS DISSERAM: / VOCÊ NÃO TEM TAMANHO",
   "dur": 80,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/C03.mp4",
+  "video": "videos/C03.mp4",
   "poster": "posters/C03.jpg"
  },
  {
@@ -302,7 +302,7 @@ const CORTES = [
   "titulo": "Todos vamos ter dias dificeis",
   "tela": "VOCÊ VAI TER / DIAS DIFÍCEIS. E AÍ?",
   "dur": 89,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/C04.mp4",
+  "video": "videos/C04.mp4",
   "poster": "posters/C04.jpg"
  },
  {
@@ -311,7 +311,7 @@ const CORTES = [
   "titulo": "Vai ser criticado",
   "tela": "DECIDIU FAZER ALGO GRANDE? / SE PREPARA",
   "dur": 32,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/C05.mp4",
+  "video": "videos/C05.mp4",
   "poster": "posters/C05.jpg"
  },
  {
@@ -320,7 +320,7 @@ const CORTES = [
   "titulo": "Toda comparacao e dor",
   "tela": "EU VESTI A 9 / DEPOIS DO RONALDO",
   "dur": 53,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/C06.mp4",
+  "video": "videos/C06.mp4",
   "poster": "posters/C06.jpg"
  },
  {
@@ -329,7 +329,7 @@ const CORTES = [
   "titulo": "O que e sucesso",
   "tela": "SUCESSO PRA MIM / NÃO É SUCESSO PRA VOCÊ",
   "dur": 86,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/C07.mp4",
+  "video": "videos/C07.mp4",
   "poster": "posters/C07.jpg"
  },
  {
@@ -338,7 +338,7 @@ const CORTES = [
   "titulo": "Deus fala no meio da dor",
   "tela": "DEUS FALOU COM O LUCAS / PELA BOCA DA ESPOSA",
   "dur": 129,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/C08.mp4",
+  "video": "videos/C08.mp4",
   "poster": "posters/C08.jpg"
  },
  {
@@ -347,7 +347,7 @@ const CORTES = [
   "titulo": "O conselho do Denzel",
   "tela": "O DIABO VAI TE VISITAR / NO MELHOR MOMENTO",
   "dur": 81,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/C09.mp4",
+  "video": "videos/C09.mp4",
   "poster": "posters/C09.jpg"
  },
  {
@@ -356,7 +356,7 @@ const CORTES = [
   "titulo": "Punicao ou cuidado",
   "tela": "PUNIÇÃO DE DEUS / OU CUIDADO?",
   "dur": 103,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/C10.mp4",
+  "video": "videos/C10.mp4",
   "poster": "posters/C10.jpg"
  },
  {
@@ -365,7 +365,7 @@ const CORTES = [
   "titulo": "Campo de concentracao",
   "tela": "O SONHO DE QUEM / PERDEU TUDO",
   "dur": 88,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/C11.mp4",
+  "video": "videos/C11.mp4",
   "poster": "posters/C11.jpg"
  },
  {
@@ -374,7 +374,7 @@ const CORTES = [
   "titulo": "Sonho que nao assusta",
   "tela": "SE O SEU SONHO / NÃO TE ASSUSTA...",
   "dur": 67,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/C12.mp4",
+  "video": "videos/C12.mp4",
   "poster": "posters/C12.jpg"
  },
  {
@@ -383,7 +383,7 @@ const CORTES = [
   "titulo": "Aos 11 anos no Pavilhao 9",
   "tela": "AOS 11 ANOS ENTREI / NO PAVILHÃO 9",
   "dur": 115,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/H01.mp4",
+  "video": "videos/H01.mp4",
   "poster": "posters/H01.jpg"
  },
  {
@@ -392,7 +392,7 @@ const CORTES = [
   "titulo": "Meu irmao transformado",
   "tela": "VISITEI MEU IRMÃO PRESO / E ACHEI OUTRO HOMEM",
   "dur": 97,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/H02.mp4",
+  "video": "videos/H02.mp4",
   "poster": "posters/H02.jpg"
  },
  {
@@ -401,7 +401,7 @@ const CORTES = [
   "titulo": "Pao com manteiga no LEVAI",
   "tela": "EU IA AO TREINO / PELO PÃO COM MANTEIGA",
   "dur": 111,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/H03.mp4",
+  "video": "videos/H03.mp4",
   "poster": "posters/H03.jpg"
  },
  {
@@ -410,7 +410,7 @@ const CORTES = [
   "titulo": "A palavra da minha mae",
   "tela": "EU IA DESISTIR / AÍ MINHA MÃE FALOU...",
   "dur": 89,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/H04.mp4",
+  "video": "videos/H04.mp4",
   "poster": "posters/H04.jpg"
  },
  {
@@ -419,7 +419,7 @@ const CORTES = [
   "titulo": "Do lixao a Dubai",
   "tela": "DA LONA NO LIXÃO / À LIMUSINE EM DUBAI",
   "dur": 126,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/H05.mp4",
+  "video": "videos/H05.mp4",
   "poster": "posters/H05.jpg"
  },
  {
@@ -428,7 +428,7 @@ const CORTES = [
   "titulo": "Do Carandiru ao palacio",
   "tela": "O REI DA ESPANHA / PAROU PRA FALAR COMIGO",
   "dur": 147,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/H06.mp4",
+  "video": "videos/H06.mp4",
   "poster": "posters/H06.jpg"
  },
  {
@@ -437,7 +437,7 @@ const CORTES = [
   "titulo": "O conselho do Romario",
   "tela": "O QUE O ROMÁRIO / ME FALOU NO MEIO DO JOGO",
   "dur": 138,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/H07.mp4",
+  "video": "videos/H07.mp4",
   "poster": "posters/H07.jpg"
  },
  {
@@ -446,7 +446,7 @@ const CORTES = [
   "titulo": "Convocado liguei pra mae",
   "tela": "CONVOCADO, EU LIGUEI: / MÃE, VÊ SE EU TÔ EM CASA",
   "dur": 84,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/H08.mp4",
+  "video": "videos/H08.mp4",
   "poster": "posters/H08.jpg"
  },
  {
@@ -455,7 +455,7 @@ const CORTES = [
   "titulo": "O Ronaldo nunca me esqueceu",
   "tela": "O RONALDO ME LIGOU / QUANDO EU TINHA 38",
   "dur": 115,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/H09.mp4",
+  "video": "videos/H09.mp4",
   "poster": "posters/H09.jpg"
  },
  {
@@ -464,7 +464,7 @@ const CORTES = [
   "titulo": "Ronaldinho e Neymar",
   "tela": "O MAIS TALENTOSO / NÃO FOI O RONALDINHO",
   "dur": 78,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/H10.mp4",
+  "video": "videos/H10.mp4",
   "poster": "posters/H10.jpg"
  },
  {
@@ -473,7 +473,7 @@ const CORTES = [
   "titulo": "A sombra da geracao passada",
   "tela": "A SELEÇÃO VIVE / UMA ASSOMBRAÇÃO",
   "dur": 70,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/H11.mp4",
+  "video": "videos/H11.mp4",
   "poster": "posters/H11.jpg"
  },
  {
@@ -482,7 +482,7 @@ const CORTES = [
   "titulo": "Sequestro no melhor momento",
   "tela": "MEU MELHOR MOMENTO / E SEQUESTRARAM MINHA IRMÃ",
   "dur": 78,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/H12.mp4",
+  "video": "videos/H12.mp4",
   "poster": "posters/H12.jpg"
  },
  {
@@ -491,7 +491,7 @@ const CORTES = [
   "titulo": "O homem que lia a Biblia",
   "tela": "NO CATIVEIRO, UM HOMEM / LIA A BÍBLIA PRA ELA",
   "dur": 113,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/H13.mp4",
+  "video": "videos/H13.mp4",
   "poster": "posters/H13.jpg"
  },
  {
@@ -500,7 +500,7 @@ const CORTES = [
   "titulo": "Tempo pra ser vitima",
   "tela": "VOCÊ ACHA QUE EU TENHO / TEMPO PRA SER VÍTIMA?",
   "dur": 86,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/H14.mp4",
+  "video": "videos/H14.mp4",
   "poster": "posters/H14.jpg"
  },
  {
@@ -509,7 +509,7 @@ const CORTES = [
   "titulo": "Chorando ate o treino",
   "tela": "EU IA PRO TREINO / CHORANDO 40 MINUTOS",
   "dur": 91,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/H15.mp4",
+  "video": "videos/H15.mp4",
   "poster": "posters/H15.jpg"
  },
  {
@@ -518,7 +518,7 @@ const CORTES = [
   "titulo": "Mentiram",
   "tela": "ME DISSERAM QUE NÃO IA SOFRER / MENTIRAM",
   "dur": 142,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/H16.mp4",
+  "video": "videos/H16.mp4",
   "poster": "posters/H16.jpg"
  },
  {
@@ -527,7 +527,7 @@ const CORTES = [
   "titulo": "Do lado de um homem de Deus",
   "tela": "DO LADO DE UM HOMEM DE DEUS / EXISTE UMA GRANDE MULHER",
   "dur": 81,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/F01.mp4",
+  "video": "videos/F01.mp4",
   "poster": "posters/F01.jpg"
  },
  {
@@ -536,7 +536,7 @@ const CORTES = [
   "titulo": "Quando eu choro diante de Deus",
   "tela": "QUANDO EU CHORO DIANTE DE DEUS / O CÉU SE LEVANTA",
   "dur": 67,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/F02.mp4",
+  "video": "videos/F02.mp4",
   "poster": "posters/F02.jpg"
  },
  {
@@ -545,7 +545,7 @@ const CORTES = [
   "titulo": "O ano ainda nao acabou",
   "tela": "O ANO AINDA / NÃO ACABOU",
   "dur": 111,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/F03.mp4",
+  "video": "videos/F03.mp4",
   "poster": "posters/F03.jpg"
  },
  {
@@ -554,7 +554,7 @@ const CORTES = [
   "titulo": "Continue crendo",
   "tela": "NÃO TÁ FÁCIL? / CONTINUE CRENDO",
   "dur": 91,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/F04.mp4",
+  "video": "videos/F04.mp4",
   "poster": "posters/F04.jpg"
  },
  {
@@ -563,7 +563,7 @@ const CORTES = [
   "titulo": "Eu nao dava meu endereco",
   "tela": "EU NÃO DAVA MEU ENDEREÇO / PRA CONSEGUIR TRABALHO",
   "dur": 97,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/F05.mp4",
+  "video": "videos/F05.mp4",
   "poster": "posters/F05.jpg"
  },
  {
@@ -572,7 +572,7 @@ const CORTES = [
   "titulo": "Deus me achou",
   "tela": "SÓ ESTOU AQUI PORQUE DEUS / ME ACHOU E ME DEU MISSÃO",
   "dur": 71,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/F06.mp4",
+  "video": "videos/F06.mp4",
   "poster": "posters/F06.jpg"
  },
  {
@@ -581,7 +581,7 @@ const CORTES = [
   "titulo": "Mae nunca mais me traga",
   "tela": "MÃE, NUNCA MAIS / ME TRAGA PRA ESSE LUGAR",
   "dur": 133,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/F07.mp4",
+  "video": "videos/F07.mp4",
   "poster": "posters/F07.jpg"
  },
  {
@@ -590,7 +590,7 @@ const CORTES = [
   "titulo": "Deus quer o seu coracao",
   "tela": "DEUS NÃO PEDE PERFEIÇÃO / ELE QUER O SEU CORAÇÃO",
   "dur": 112,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/F08.mp4",
+  "video": "videos/F08.mp4",
   "poster": "posters/F08.jpg"
  },
  {
@@ -599,7 +599,7 @@ const CORTES = [
   "titulo": "Deus conhece o seu endereco",
   "tela": "DEUS CONHECE / O SEU ENDEREÇO",
   "dur": 93,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/F10.mp4",
+  "video": "videos/F10.mp4",
   "poster": "posters/F10.jpg"
  },
  {
@@ -608,7 +608,7 @@ const CORTES = [
   "titulo": "Um ambiente de ceu em casa",
   "tela": "PRA LEVAR SUA FAMÍLIA AO CÉU / CRIE UM AMBIENTE DE CÉU EM CASA",
   "dur": 85,
-  "video": "https://github.com/thsantosmercadolivre-lab/ricardo-cortes-aprovacao/releases/download/cortes/F11.mp4",
+  "video": "videos/F11.mp4",
   "poster": "posters/F11.jpg"
  }
 ];
