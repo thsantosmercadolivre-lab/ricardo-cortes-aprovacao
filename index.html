@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Cortes do Ricardo</title>
+<style>
+  :root { --amarelo: #F2C94C; --fundo: #111; --texto: #f2f2f2; --cinza: #8a8a8a; --verde: #2fb36b; --vermelho: #e04848; }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: var(--fundo); color: var(--texto); font: 16px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif; min-height: 100vh; }
+  main { max-width: 520px; margin: 0 auto; padding: 16px 16px 32px; }
+  header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px; gap: 12px; }
+  h1 { font-size: 18px; font-weight: 700; }
+  #progresso { color: var(--cinza); font-size: 14px; white-space: nowrap; }
+  .barra { height: 4px; background: #2a2a2a; border-radius: 2px; margin-bottom: 12px; overflow: hidden; }
+  .barra i { display: block; height: 100%; background: var(--amarelo); width: 0; transition: width .2s; }
+  select { width: 100%; margin-bottom: 12px; background: #1c1c1c; color: var(--texto); border: 1px solid #2f2f2f; border-radius: 8px; padding: 10px; font: inherit; font-size: 15px; }
+  .grupo { color: var(--amarelo); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 6px; }
+  .card video { width: 100%; max-height: 66vh; aspect-ratio: 9 / 16; display: block; margin: 0 auto; border-radius: 8px; border: 1px solid #2a2a2a; background: #000; object-fit: contain; }
+  .codigo { color: var(--cinza); font-size: 14px; margin: 8px 0 12px; }
+  .codigo b { color: var(--amarelo); }
+  .codigo span { color: var(--texto); }
+  .botoes { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  button { font: inherit; font-weight: 700; border: 0; border-radius: 10px; padding: 16px; cursor: pointer; color: #fff; }
+  .sim { background: var(--verde); }
+  .nao { background: var(--vermelho); }
+  .escolhido { outline: 3px solid #fff; outline-offset: 2px; }
+  .nav { display: flex; justify-content: space-between; margin-top: 14px; }
+  .nav button { background: transparent; color: var(--cinza); padding: 8px 0; font-weight: 500; }
+  .nav button:disabled { opacity: .3; }
+  textarea { width: 100%; margin-top: 12px; background: #1c1c1c; color: var(--texto); border: 1px solid #2f2f2f; border-radius: 8px; padding: 10px; font: inherit; font-size: 15px; resize: vertical; min-height: 44px; }
+  #fim { display: none; }
+  #fim h2 { font-size: 22px; margin-bottom: 8px; }
+  #fim p { color: var(--cinza); margin-bottom: 16px; }
+  #resumo { white-space: pre-wrap; background: #1c1c1c; border: 1px solid #2f2f2f; border-radius: 8px; padding: 12px; font-size: 14px; margin-bottom: 16px; }
+  .whats { background: #25d366; width: 100%; margin-bottom: 10px; }
+  .copiar { background: #333; width: 100%; margin-bottom: 10px; }
+  .voltar { background: transparent; color: var(--cinza); width: 100%; font-weight: 500; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Cortes do Ricardo</h1>
+    <span id="progresso"></span>
+  </header>
+  <div class="barra"><i id="barra"></i></div>
+
+  <section id="votacao">
+    <select id="pular" aria-label="Ir para o vídeo"></select>
+    <div class="grupo" id="grupo"></div>
+    <div class="card"><video id="video" controls playsinline preload="metadata"></video></div>
+    <div class="codigo">Corte <b id="codigo"></b> · <span id="titulo"></span></div>
+    <div class="botoes">
+      <button class="sim" id="bSim">✓ Aprovo</button>
+      <button class="nao" id="bNao">✕ Não aprovo</button>
+    </div>
+    <textarea id="obs" rows="2" placeholder="Algum ajuste? Escreva aqui (opcional)"></textarea>
+    <div class="nav">
+      <button id="ant">← Anterior</button>
+      <button id="prox">Próximo →</button>
+    </div>
+  </section>
+
+  <section id="fim">
+    <h2>Pronto, Thiago!</h2>
+    <p>Mande as respostas pelo WhatsApp ou copie e cole no Claude.</p>
+    <div id="resumo"></div>
+    <button class="whats" id="bWhats">Enviar pelo WhatsApp</button>
+    <button class="copiar" id="bCopiar">Copiar respostas</button>
+    <button class="voltar" id="bRever">Rever os cortes</button>
+  </section>
+</main>
+
+<script src="cortes.js?v=1"></script>
+<script>
+  const CHAVE = "ricardo-cortes-24-11";
+  let votos = {}, obs = {}, i = 0;
+  try { ({ votos = {}, obs = {}, i = 0 } = JSON.parse(localStorage.getItem(CHAVE)) || {}); } catch (e) {}
+  if (!(i >= 0 && i < CORTES.length)) i = 0;
+  const $ = id => document.getElementById(id);
+  const salvar = () => { try { localStorage.setItem(CHAVE, JSON.stringify({ votos, obs, i })); } catch (e) {} };
+  const mmss = s => Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0");
+
+  // menu pra pular direto pra um video
+  const grupos = [...new Set(CORTES.map(c => c.grupo))];
+  grupos.forEach(g => {
+    const og = document.createElement("optgroup"); og.label = g;
+    CORTES.forEach((c, n) => { if (c.grupo === g) { const o = document.createElement("option"); o.value = n; og.appendChild(o); } });
+    $("pular").appendChild(og);
+  });
+  function rotulos() {
+    [...$("pular").options].forEach(o => {
+      const c = CORTES[o.value], v = votos[c.id];
+      o.textContent = (v === "sim" ? "✓ " : v === "nao" ? "✕ " : "· ") + c.id + " " + c.titulo + " (" + mmss(c.dur) + ")";
+    });
+  }
+
+  function mostrar() {
+    const c = CORTES[i], v = $("video");
+    v.pause(); v.poster = c.poster; v.src = c.video;
+    $("grupo").textContent = c.grupo;
+    $("codigo").textContent = c.id;
+    $("titulo").textContent = c.titulo + " · " + mmss(c.dur);
+    $("obs").value = obs[c.id] || "";
+    $("bSim").classList.toggle("escolhido", votos[c.id] === "sim");
+    $("bNao").classList.toggle("escolhido", votos[c.id] === "nao");
+    $("ant").disabled = i === 0;
+    const feitos = Object.keys(votos).length;
+    $("progresso").textContent = feitos + " de " + CORTES.length;
+    $("barra").style.width = (feitos / CORTES.length * 100) + "%";
+    rotulos(); $("pular").value = i;
+    window.scrollTo(0, 0);
+  }
+
+  function irPara(n) {
+    if (n >= CORTES.length) return fim();
+    i = Math.max(0, n); salvar(); mostrar();
+  }
+
+  function votar(v) {
+    votos[CORTES[i].id] = v; salvar();
+    setTimeout(() => irPara(i + 1), 150);
+  }
+
+  function texto() {
+    let t = "Cortes do Ricardo (24/11) — respostas do Thiago\n";
+    grupos.forEach(g => {
+      const cs = CORTES.filter(c => c.grupo === g);
+      const sim = cs.filter(c => votos[c.id] === "sim").map(c => c.id);
+      const nao = cs.filter(c => votos[c.id] === "nao").map(c => c.id);
+      const falta = cs.filter(c => !votos[c.id]).map(c => c.id);
+      t += "\n" + g + "\n";
+      t += "✓ Aprovo (" + sim.length + "): " + (sim.join(", ") || "-") + "\n";
+      t += "✕ Não aprovo (" + nao.length + "): " + (nao.join(", ") || "-") + "\n";
+      if (falta.length) t += "Sem resposta: " + falta.join(", ") + "\n";
+    });
+    const notas = CORTES.filter(c => obs[c.id]).map(c => c.id + " (" + c.titulo + "): " + obs[c.id]);
+    if (notas.length) t += "\nAjustes:\n" + notas.join("\n") + "\n";
+    return t;
+  }
+
+  function fim() {
+    $("video").pause();
+    $("votacao").style.display = "none";
+    $("fim").style.display = "block";
+    $("resumo").textContent = texto();
+    window.scrollTo(0, 0);
+  }
+
+  $("bSim").onclick = () => votar("sim");
+  $("bNao").onclick = () => votar("nao");
+  $("ant").onclick = () => irPara(i - 1);
+  $("prox").onclick = () => irPara(i + 1);
+  $("pular").onchange = e => irPara(+e.target.value);
+  $("obs").oninput = e => { const id = CORTES[i].id, t = e.target.value.trim(); if (t) obs[id] = t; else delete obs[id]; salvar(); };
+  $("bWhats").onclick = () => { location.href = "https://wa.me/?text=" + encodeURIComponent(texto()); };
+  $("bCopiar").onclick = async () => {
+    try { await navigator.clipboard.writeText(texto()); $("bCopiar").textContent = "Copiado!"; }
+    catch (e) { $("bCopiar").textContent = "Não deu para copiar, tire um print"; }
+  };
+  $("bRever").onclick = () => { $("fim").style.display = "none"; $("votacao").style.display = "block"; irPara(0); };
+
+  mostrar();
+</script>
+</body>
+</html>
