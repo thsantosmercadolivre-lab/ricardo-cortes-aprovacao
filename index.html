@@ -36,6 +36,9 @@
   #resumo { white-space: pre-wrap; background: #1c1c1c; border: 1px solid #2f2f2f; border-radius: 8px; padding: 12px; font-size: 14px; margin-bottom: 16px; }
   .whats { background: #25d366; width: 100%; margin-bottom: 10px; }
   .copiar { background: #333; width: 100%; margin-bottom: 10px; }
+  #parcial { margin-top: 22px; border-top: 1px solid #2a2a2a; padding-top: 16px; }
+  #parcial h3 { font-size: 15px; color: var(--amarelo); margin-bottom: 8px; }
+  #resumoParcial { white-space: pre-wrap; background: #1c1c1c; border: 1px solid #2f2f2f; border-radius: 8px; padding: 12px; font-size: 14px; margin-bottom: 12px; }
   .voltar { background: transparent; color: var(--cinza); width: 100%; font-weight: 500; }
 </style>
 </head>
@@ -60,6 +63,12 @@
     <div class="nav">
       <button id="ant">← Anterior</button>
       <button id="prox">Próximo →</button>
+    </div>
+    <div id="parcial">
+      <h3>Suas respostas até agora</h3>
+      <div id="resumoParcial"></div>
+      <button class="copiar" id="bCopiar2">Copiar respostas</button>
+      <button class="whats" id="bWhats2">Enviar pelo WhatsApp</button>
     </div>
   </section>
 
@@ -112,6 +121,8 @@
     $("progresso").textContent = feitos + " de " + CORTES.length;
     $("barra").style.width = (feitos / CORTES.length * 100) + "%";
     rotulos(); $("pular").value = i;
+    $("resumoParcial").textContent = texto();
+    $("bCopiar2").textContent = "Copiar respostas";
     window.scrollTo(0, 0);
   }
 
@@ -155,11 +166,16 @@
   $("ant").onclick = () => irPara(i - 1);
   $("prox").onclick = () => irPara(i + 1);
   $("pular").onchange = e => irPara(+e.target.value);
-  $("obs").oninput = e => { const id = CORTES[i].id, t = e.target.value.trim(); if (t) obs[id] = t; else delete obs[id]; salvar(); };
+  $("obs").oninput = e => { const id = CORTES[i].id, t = e.target.value.trim(); if (t) obs[id] = t; else delete obs[id]; salvar(); $("resumoParcial").textContent = texto(); };
   $("bWhats").onclick = () => { location.href = "https://wa.me/?text=" + encodeURIComponent(texto()); };
   $("bCopiar").onclick = async () => {
     try { await navigator.clipboard.writeText(texto()); $("bCopiar").textContent = "Copiado!"; }
     catch (e) { $("bCopiar").textContent = "Não deu para copiar, tire um print"; }
+  };
+  $("bWhats2").onclick = () => $("bWhats").onclick();
+  $("bCopiar2").onclick = async () => {
+    try { await navigator.clipboard.writeText(texto()); $("bCopiar2").textContent = "Copiado!"; }
+    catch (e) { $("bCopiar2").textContent = "Não deu para copiar, tire um print"; }
   };
   $("bRever").onclick = () => { $("fim").style.display = "none"; $("votacao").style.display = "block"; irPara(0); };
 
